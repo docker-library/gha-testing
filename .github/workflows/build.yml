@@ -31,7 +31,7 @@ jobs:
         
       - name: test
         run: |
-            crane pull --platform windows/amd64 mcr.microsoft.com/windows/server:ltsc2022 image.tar
+            crane pull --platform windows/amd64 mcr.microsoft.com/windows:20H2 image.tar
 
       - name: Stage artifact
         uses: actions/upload-artifact@v4
